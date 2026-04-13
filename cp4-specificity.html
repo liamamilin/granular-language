@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Levels of Specificity – Granular Language</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./cp5-attributes.html" rel="next">
+<link href="./cp3-boundaries.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cp1-naming.html">Part I: Naming the World</a></li><li class="breadcrumb-item"><a href="./cp4-specificity.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Levels of Specificity</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Granular Language</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I: Naming the World</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp1-naming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Naming</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp2-categories.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Categories</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp3-boundaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Boundaries</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp4-specificity.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Levels of Specificity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II: Adding Detail</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp5-attributes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Attributes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp6-degree.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Degree</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp7-quantity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Quantity and Measure</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp8-comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Comparison</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III: Relating Things</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp9-Part.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Part and Whole</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp10-sequence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Sequence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp11-cause.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cause and Effect</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp12-dependence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Dependence and Condition</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part IV: Perspective and Experience</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp13-view.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Point of View</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp14-experience.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Experience</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp15-context.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Context</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp16-evaluation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Evaluation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part V: Precision, Ambiguity, and Limits</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp17-vagueness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Vagueness</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp18-ambiguity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Ambiguity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp19-overprecision.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Overprecision</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp20-.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">The Edge of Language</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Conclusion-Why Precision Changes Thought</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-specificity" id="toc-what-is-specificity" class="nav-link active" data-scroll-target="#what-is-specificity"><span class="header-section-number">5.1</span> What is specificity?</a></li>
+  <li><a href="#why-specificity-matters" id="toc-why-specificity-matters" class="nav-link" data-scroll-target="#why-specificity-matters"><span class="header-section-number">5.2</span> Why specificity matters</a></li>
+  <li><a href="#key-distinctions" id="toc-key-distinctions" class="nav-link" data-scroll-target="#key-distinctions"><span class="header-section-number">5.3</span> Key distinctions</a>
+  <ul class="collapse">
+  <li><a href="#the-same-thing-at-multiple-levels" id="toc-the-same-thing-at-multiple-levels" class="nav-link" data-scroll-target="#the-same-thing-at-multiple-levels"><span class="header-section-number">5.3.1</span> 1. The same thing at multiple levels</a></li>
+  <li><a href="#broad-term-vs.-narrow-term" id="toc-broad-term-vs.-narrow-term" class="nav-link" data-scroll-target="#broad-term-vs.-narrow-term"><span class="header-section-number">5.3.2</span> 2. Broad term vs.&nbsp;narrow term</a></li>
+  <li><a href="#specificity-as-resolution" id="toc-specificity-as-resolution" class="nav-link" data-scroll-target="#specificity-as-resolution"><span class="header-section-number">5.3.3</span> 3. Specificity as resolution</a></li>
+  <li><a href="#choosing-the-right-level" id="toc-choosing-the-right-level" class="nav-link" data-scroll-target="#choosing-the-right-level"><span class="header-section-number">5.3.4</span> 4. Choosing the right level</a></li>
+  </ul></li>
+  <li><a href="#core-patterns" id="toc-core-patterns" class="nav-link" data-scroll-target="#core-patterns"><span class="header-section-number">5.4</span> Core patterns</a>
+  <ul class="collapse">
+  <li><a href="#basic-semantic-patterns" id="toc-basic-semantic-patterns" class="nav-link" data-scroll-target="#basic-semantic-patterns"><span class="header-section-number">5.4.1</span> Basic semantic patterns</a></li>
+  <li><a href="#basic-language-patterns" id="toc-basic-language-patterns" class="nav-link" data-scroll-target="#basic-language-patterns"><span class="header-section-number">5.4.2</span> Basic language patterns</a></li>
+  </ul></li>
+  <li><a href="#specificity-and-the-movement-of-this-volume" id="toc-specificity-and-the-movement-of-this-volume" class="nav-link" data-scroll-target="#specificity-and-the-movement-of-this-volume"><span class="header-section-number">5.5</span> Specificity and the movement of this volume</a>
+  <ul class="collapse">
+  <li><a href="#naming-selects" id="toc-naming-selects" class="nav-link" data-scroll-target="#naming-selects"><span class="header-section-number">5.5.1</span> Naming selects</a></li>
+  <li><a href="#categories-group" id="toc-categories-group" class="nav-link" data-scroll-target="#categories-group"><span class="header-section-number">5.5.2</span> Categories group</a></li>
+  <li><a href="#boundaries-test-the-class" id="toc-boundaries-test-the-class" class="nav-link" data-scroll-target="#boundaries-test-the-class"><span class="header-section-number">5.5.3</span> Boundaries test the class</a></li>
+  <li><a href="#specificity-adjusts-the-resolution" id="toc-specificity-adjusts-the-resolution" class="nav-link" data-scroll-target="#specificity-adjusts-the-resolution"><span class="header-section-number">5.5.4</span> Specificity adjusts the resolution</a></li>
+  </ul></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">5.6</span> Examples</a>
+  <ul class="collapse">
+  <li><a href="#basic-semantic-ladders" id="toc-basic-semantic-ladders" class="nav-link" data-scroll-target="#basic-semantic-ladders"><span class="header-section-number">5.6.1</span> Basic semantic ladders</a></li>
+  <li><a href="#broad-vs.-narrow-examples" id="toc-broad-vs.-narrow-examples" class="nav-link" data-scroll-target="#broad-vs.-narrow-examples"><span class="header-section-number">5.6.2</span> Broad vs.&nbsp;narrow examples</a></li>
+  <li><a href="#resolution-in-context" id="toc-resolution-in-context" class="nav-link" data-scroll-target="#resolution-in-context"><span class="header-section-number">5.6.3</span> Resolution in context</a></li>
+  </ul></li>
+  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters"><span class="header-section-number">5.7</span> Why this matters</a></li>
+  <li><a href="#chapter-summary" id="toc-chapter-summary" class="nav-link" data-scroll-target="#chapter-summary"><span class="header-section-number">5.8</span> Chapter summary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cp1-naming.html">Part I: Naming the World</a></li><li class="breadcrumb-item"><a href="./cp4-specificity.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Levels of Specificity</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Levels of Specificity</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The same thing can be said broadly or narrowly.</p>
+<p>A knife can be called a <em>thing</em>, a <em>tool</em>, or a <em>knife</em>. An apple can be called <em>food</em>, <em>fruit</em>, or <em>apple</em>. A chair can be called an <em>object</em>, a <em>piece of furniture</em>, or a <em>chair</em>. In each case, the world has not changed, but the level of semantic resolution has changed. Language can grip the same reality loosely or tightly, at a wider level or a narrower one.</p>
+<p>This is why levels of specificity matter.</p>
+<p>After naming, grouping, and examining category boundaries, language must learn another discipline: how wide or narrow a term is. A broad term gives reach. A narrow term gives detail. Both are useful, but they do not do the same work. Granular language becomes stronger when it can move deliberately between levels rather than speaking at only one fixed level of generality.</p>
+<section id="what-is-specificity" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="what-is-specificity"><span class="header-section-number">5.1</span> What is specificity?</h2>
+<p>At the level of ordinary language, specificity is the degree to which a word or expression picks out something broadly or narrowly.</p>
+<p>We notice specificity through simple realities such as:</p>
+<ul>
+<li><p>using a broad term or a narrow term</p></li>
+<li><p>moving from general class to smaller subtype</p></li>
+<li><p>describing the same thing at different semantic levels</p></li>
+<li><p>increasing resolution by narrowing the label</p></li>
+</ul>
+<p>Examples include:</p>
+<ul>
+<li><p><em>thing → tool → knife</em></p></li>
+<li><p><em>food → fruit → apple</em></p></li>
+<li><p><em>animal → bird → sparrow</em></p></li>
+<li><p><em>vehicle → car → taxi</em></p></li>
+</ul>
+<p>Specificity does not create a new object.<br>
+It changes how finely the object is selected in language.</p>
+</section>
+<section id="why-specificity-matters" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="why-specificity-matters"><span class="header-section-number">5.2</span> Why specificity matters</h2>
+<p>Specificity matters because understanding often depends on choosing the right level of detail.</p>
+<p>We need to know:</p>
+<ul>
+<li><p>when a broad term is enough</p></li>
+<li><p>when a narrower term is better</p></li>
+<li><p>how semantic resolution increases through narrower naming</p></li>
+<li><p>that the same thing can be described at several levels</p></li>
+</ul>
+<p>Without this understanding, language easily becomes either too vague or too narrow.</p>
+<ul>
+<li><p>If it stays too broad, important distinctions disappear.</p></li>
+<li><p>If it becomes narrow too early, communication may become unnecessarily heavy or precise.</p></li>
+</ul>
+<p>Granular language improves when it can adjust the level of specificity to the task.</p>
+</section>
+<section id="key-distinctions" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="key-distinctions"><span class="header-section-number">5.3</span> Key distinctions</h2>
+<section id="the-same-thing-at-multiple-levels" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="the-same-thing-at-multiple-levels"><span class="header-section-number">5.3.1</span> 1. The same thing at multiple levels</h3>
+<p>One thing may be named at different semantic heights.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Broad level</th>
+<th>Middle level</th>
+<th>Narrow level</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>thing</td>
+<td>tool</td>
+<td>knife</td>
+</tr>
+<tr class="even">
+<td>food</td>
+<td>fruit</td>
+<td>apple</td>
+</tr>
+<tr class="odd">
+<td>animal</td>
+<td>bird</td>
+<td>sparrow</td>
+</tr>
+<tr class="even">
+<td>object</td>
+<td>furniture</td>
+<td>chair</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>This is a thing. More specifically, it is a tool. More specifically still, it is a knife.</p></li>
+<li><p>This is food. More specifically, it is fruit. More specifically still, it is an apple.</p></li>
+<li><p>That is an animal. More specifically, it is a bird. Even more specifically, it is a sparrow.</p></li>
+</ul>
+<p>This matters because specificity is often layered rather than absolute.</p>
+<hr>
+</section>
+<section id="broad-term-vs.-narrow-term" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="broad-term-vs.-narrow-term"><span class="header-section-number">5.3.2</span> 2. Broad term vs.&nbsp;narrow term</h3>
+<p>Some terms cover a wide range, while others select a smaller range.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 43%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>broad term</td>
+<td>covers many different items</td>
+<td>thing, food, animal, vehicle</td>
+</tr>
+<tr class="even">
+<td>narrow term</td>
+<td>covers fewer items more exactly</td>
+<td>knife, apple, sparrow, taxi</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p><em>Tool</em> is broader than <em>knife</em>.</p></li>
+<li><p><em>Fruit</em> is broader than <em>apple</em>.</p></li>
+<li><p><em>Vehicle</em> is broader than <em>car</em>.</p></li>
+<li><p><em>Animal</em> is broader than <em>bird</em>.</p></li>
+</ul>
+<p>Broad terms simplify.<br>
+Narrow terms refine.</p>
+<hr>
+</section>
+<section id="specificity-as-resolution" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="specificity-as-resolution"><span class="header-section-number">5.3.3</span> 3. Specificity as resolution</h3>
+<p>Greater specificity usually means higher semantic resolution.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Lower resolution</th>
+<th>Higher resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>thing</td>
+<td>knife</td>
+</tr>
+<tr class="even">
+<td>food</td>
+<td>apple</td>
+</tr>
+<tr class="odd">
+<td>animal</td>
+<td>sparrow</td>
+</tr>
+<tr class="even">
+<td>clothing</td>
+<td>winter coat</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p><em>Thing</em> gives very low resolution.</p></li>
+<li><p><em>Tool</em> gives more resolution.</p></li>
+<li><p><em>Knife</em> gives still more resolution.</p></li>
+<li><p><em>Kitchen knife</em> gives even greater resolution.</p></li>
+</ul>
+<p>This matters because specificity is one of the main ways language becomes more precise without yet adding many descriptive attributes.</p>
+<hr>
+</section>
+<section id="choosing-the-right-level" class="level3" data-number="5.3.4">
+<h3 data-number="5.3.4" class="anchored" data-anchor-id="choosing-the-right-level"><span class="header-section-number">5.3.4</span> 4. Choosing the right level</h3>
+<p>Higher specificity is not always better in every situation.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situation</th>
+<th>Better level</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>broad overview</td>
+<td>broader term</td>
+<td>We need food.</td>
+</tr>
+<tr class="even">
+<td>practical selection</td>
+<td>narrower term</td>
+<td>We need apples.</td>
+</tr>
+<tr class="odd">
+<td>very precise context</td>
+<td>highly specific term</td>
+<td>We need green apples for this recipe.</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>In a general discussion, <em>food</em> may be enough.</p></li>
+<li><p>In shopping, <em>fruit</em> may be more helpful.</p></li>
+<li><p>In cooking, <em>apple</em> may be better.</p></li>
+<li><p>In a recipe, <em>green apple</em> may be best.</p></li>
+</ul>
+<p>This matters because semantic control includes knowing when to stop narrowing.</p>
+</section>
+</section>
+<section id="core-patterns" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="core-patterns"><span class="header-section-number">5.4</span> Core patterns</h2>
+<p>This chapter rests on a few basic patterns.</p>
+<section id="basic-semantic-patterns" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="basic-semantic-patterns"><span class="header-section-number">5.4.1</span> Basic semantic patterns</h3>
+<ul>
+<li><p>The same thing can be named at different levels.</p></li>
+<li><p>Some terms are broad.</p></li>
+<li><p>Some terms are narrow.</p></li>
+<li><p>Narrower terms usually increase resolution.</p></li>
+<li><p>Broader terms simplify.</p></li>
+<li><p>Good language chooses the right level for the context.</p></li>
+</ul>
+</section>
+<section id="basic-language-patterns" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="basic-language-patterns"><span class="header-section-number">5.4.2</span> Basic language patterns</h3>
+<ul>
+<li><p>___ is a broad term.</p></li>
+<li><p>___ is a narrower term than ___.</p></li>
+<li><p>This is a kind of ___.</p></li>
+<li><p>More specifically, it is ___.</p></li>
+<li><p>At a broad level, this is ___.</p></li>
+<li><p>At a narrower level, this is ___.</p></li>
+<li><p>We need a more specific word.</p></li>
+</ul>
+</section>
+</section>
+<section id="specificity-and-the-movement-of-this-volume" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="specificity-and-the-movement-of-this-volume"><span class="header-section-number">5.5</span> Specificity and the movement of this volume</h2>
+<p>Levels of specificity complete the first major block of this volume.</p>
+<section id="naming-selects" class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="naming-selects"><span class="header-section-number">5.5.1</span> Naming selects</h3>
+<ul>
+<li>A word first picks something out.</li>
+</ul>
+</section>
+<section id="categories-group" class="level3" data-number="5.5.2">
+<h3 data-number="5.5.2" class="anchored" data-anchor-id="categories-group"><span class="header-section-number">5.5.2</span> Categories group</h3>
+<ul>
+<li>The selected item is placed into a class.</li>
+</ul>
+</section>
+<section id="boundaries-test-the-class" class="level3" data-number="5.5.3">
+<h3 data-number="5.5.3" class="anchored" data-anchor-id="boundaries-test-the-class"><span class="header-section-number">5.5.3</span> Boundaries test the class</h3>
+<ul>
+<li>We ask where the class begins and ends.</li>
+</ul>
+</section>
+<section id="specificity-adjusts-the-resolution" class="level3" data-number="5.5.4">
+<h3 data-number="5.5.4" class="anchored" data-anchor-id="specificity-adjusts-the-resolution"><span class="header-section-number">5.5.4</span> Specificity adjusts the resolution</h3>
+<ul>
+<li>We move between broad and narrow levels within the same semantic field.</li>
+</ul>
+<p>This is an important transition. Up to this point, language has learned to select, group, and examine boundaries. With specificity, it now learns to control semantic scale more deliberately.</p>
+</section>
+</section>
+<section id="examples" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="examples"><span class="header-section-number">5.6</span> Examples</h2>
+<p>Here are some clean examples of specificity in use.</p>
+<section id="basic-semantic-ladders" class="level3" data-number="5.6.1">
+<h3 data-number="5.6.1" class="anchored" data-anchor-id="basic-semantic-ladders"><span class="header-section-number">5.6.1</span> Basic semantic ladders</h3>
+<ul>
+<li><p>thing → tool → knife</p></li>
+<li><p>food → fruit → apple</p></li>
+<li><p>animal → bird → sparrow</p></li>
+<li><p>object → furniture → chair</p></li>
+</ul>
+</section>
+<section id="broad-vs.-narrow-examples" class="level3" data-number="5.6.2">
+<h3 data-number="5.6.2" class="anchored" data-anchor-id="broad-vs.-narrow-examples"><span class="header-section-number">5.6.2</span> Broad vs.&nbsp;narrow examples</h3>
+<ul>
+<li><p><em>Thing</em> is broader than <em>tool</em>.</p></li>
+<li><p><em>Tool</em> is broader than <em>knife</em>.</p></li>
+<li><p><em>Food</em> is broader than <em>fruit</em>.</p></li>
+<li><p><em>Fruit</em> is broader than <em>apple</em>.</p></li>
+</ul>
+</section>
+<section id="resolution-in-context" class="level3" data-number="5.6.3">
+<h3 data-number="5.6.3" class="anchored" data-anchor-id="resolution-in-context"><span class="header-section-number">5.6.3</span> Resolution in context</h3>
+<ul>
+<li><p>We need food.</p></li>
+<li><p>More specifically, we need fruit.</p></li>
+<li><p>More specifically still, we need apples.</p></li>
+<li><p>He used a tool.</p></li>
+<li><p>More specifically, he used a knife.</p></li>
+<li><p>Even more specifically, he used a kitchen knife.</p></li>
+</ul>
+<p>These examples show that specificity language often includes:</p>
+<ul>
+<li><p>semantic layering</p></li>
+<li><p>broader and narrower terms</p></li>
+<li><p>resolution shifts</p></li>
+<li><p>contextual choice</p></li>
+<li><p>controlled refinement</p></li>
+</ul>
+</section>
+</section>
+<section id="why-this-matters" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="why-this-matters"><span class="header-section-number">5.7</span> Why this matters</h2>
+<p>To understand specificity is to understand that semantic resolution has levels.</p>
+<p>Without this idea, language often becomes stuck at one layer. A person may speak too broadly and lose useful detail, or speak too narrowly and overload a simple situation. Higher control comes from being able to move between levels deliberately.</p>
+<p>Specificity is also essential because many later structures depend on it:</p>
+<ul>
+<li><p>attributes will refine already selected objects</p></li>
+<li><p>degree will sharpen already named qualities</p></li>
+<li><p>comparison becomes stronger when items are named at the right level</p></li>
+<li><p>context often determines how specific language should be</p></li>
+<li><p>semantic precision grows not only by adding words, but by choosing the right semantic level</p></li>
+</ul>
+<p>Granular language therefore requires more than naming and grouping. It requires command over semantic scale.</p>
+</section>
+<section id="chapter-summary" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="chapter-summary"><span class="header-section-number">5.8</span> Chapter summary</h2>
+<p>This chapter introduces levels of specificity as one of the main ways language increases resolution.</p>
+<p>The same thing can be described broadly or narrowly. A knife may be called a thing, a tool, or a knife. An apple may be called food, fruit, or apple. Broad terms simplify, while narrow terms refine.</p>
+<p>The central lessons of this chapter are:</p>
+<ul>
+<li><p>the same thing can be named at different levels</p></li>
+<li><p>some terms are broad and some are narrow</p></li>
+<li><p>specificity increases semantic resolution</p></li>
+<li><p>broader terms simplify reality</p></li>
+<li><p>narrower terms sharpen selection</p></li>
+<li><p>good language chooses the right level for the context</p></li>
+</ul>
+<p>To recognize levels of specificity is to gain control over semantic scale. Language becomes more precise not only by adding description, but by knowing how broadly or narrowly to name what is already there.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./cp3-boundaries.html" class="pagination-link" aria-label="Boundaries">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Boundaries</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./cp5-attributes.html" class="pagination-link" aria-label="Attributes">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Attributes</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

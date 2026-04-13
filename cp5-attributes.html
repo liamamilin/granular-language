@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; Attributes – Granular Language</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./cp6-degree.html" rel="next">
+<link href="./cp4-specificity.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cp5-attributes.html">Part II: Adding Detail</a></li><li class="breadcrumb-item"><a href="./cp5-attributes.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Attributes</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Granular Language</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I: Naming the World</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp1-naming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Naming</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp2-categories.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Categories</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp3-boundaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Boundaries</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp4-specificity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Levels of Specificity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II: Adding Detail</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp5-attributes.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Attributes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp6-degree.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Degree</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp7-quantity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Quantity and Measure</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp8-comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Comparison</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III: Relating Things</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp9-Part.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Part and Whole</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp10-sequence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Sequence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp11-cause.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cause and Effect</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp12-dependence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Dependence and Condition</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part IV: Perspective and Experience</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp13-view.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Point of View</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp14-experience.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Experience</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp15-context.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Context</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp16-evaluation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Evaluation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part V: Precision, Ambiguity, and Limits</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp17-vagueness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Vagueness</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp18-ambiguity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Ambiguity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp19-overprecision.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Overprecision</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp20-.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">The Edge of Language</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Conclusion-Why Precision Changes Thought</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-an-attribute" id="toc-what-is-an-attribute" class="nav-link active" data-scroll-target="#what-is-an-attribute"><span class="header-section-number">6.1</span> What is an attribute?</a></li>
+  <li><a href="#why-attributes-matter" id="toc-why-attributes-matter" class="nav-link" data-scroll-target="#why-attributes-matter"><span class="header-section-number">6.2</span> Why attributes matter</a></li>
+  <li><a href="#key-distinctions" id="toc-key-distinctions" class="nav-link" data-scroll-target="#key-distinctions"><span class="header-section-number">6.3</span> Key distinctions</a>
+  <ul class="collapse">
+  <li><a href="#size" id="toc-size" class="nav-link" data-scroll-target="#size"><span class="header-section-number">6.3.1</span> 1. Size</a></li>
+  <li><a href="#shape" id="toc-shape" class="nav-link" data-scroll-target="#shape"><span class="header-section-number">6.3.2</span> 2. Shape</a></li>
+  <li><a href="#color" id="toc-color" class="nav-link" data-scroll-target="#color"><span class="header-section-number">6.3.3</span> 3. Color</a></li>
+  <li><a href="#temperature" id="toc-temperature" class="nav-link" data-scroll-target="#temperature"><span class="header-section-number">6.3.4</span> 4. Temperature</a></li>
+  <li><a href="#texture" id="toc-texture" class="nav-link" data-scroll-target="#texture"><span class="header-section-number">6.3.5</span> 5. Texture</a></li>
+  <li><a href="#speed" id="toc-speed" class="nav-link" data-scroll-target="#speed"><span class="header-section-number">6.3.6</span> 6. Speed</a></li>
+  </ul></li>
+  <li><a href="#core-patterns" id="toc-core-patterns" class="nav-link" data-scroll-target="#core-patterns"><span class="header-section-number">6.4</span> Core patterns</a>
+  <ul class="collapse">
+  <li><a href="#basic-semantic-patterns" id="toc-basic-semantic-patterns" class="nav-link" data-scroll-target="#basic-semantic-patterns"><span class="header-section-number">6.4.1</span> Basic semantic patterns</a></li>
+  <li><a href="#basic-language-patterns" id="toc-basic-language-patterns" class="nav-link" data-scroll-target="#basic-language-patterns"><span class="header-section-number">6.4.2</span> Basic language patterns</a></li>
+  </ul></li>
+  <li><a href="#attributes-and-the-movement-of-this-volume" id="toc-attributes-and-the-movement-of-this-volume" class="nav-link" data-scroll-target="#attributes-and-the-movement-of-this-volume"><span class="header-section-number">6.5</span> Attributes and the movement of this volume</a>
+  <ul class="collapse">
+  <li><a href="#naming-selects" id="toc-naming-selects" class="nav-link" data-scroll-target="#naming-selects"><span class="header-section-number">6.5.1</span> Naming selects</a></li>
+  <li><a href="#categories-group" id="toc-categories-group" class="nav-link" data-scroll-target="#categories-group"><span class="header-section-number">6.5.2</span> Categories group</a></li>
+  <li><a href="#specificity-narrows" id="toc-specificity-narrows" class="nav-link" data-scroll-target="#specificity-narrows"><span class="header-section-number">6.5.3</span> Specificity narrows</a></li>
+  <li><a href="#attributes-refine" id="toc-attributes-refine" class="nav-link" data-scroll-target="#attributes-refine"><span class="header-section-number">6.5.4</span> Attributes refine</a></li>
+  </ul></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">6.6</span> Examples</a>
+  <ul class="collapse">
+  <li><a href="#size-1" id="toc-size-1" class="nav-link" data-scroll-target="#size-1"><span class="header-section-number">6.6.1</span> Size</a></li>
+  <li><a href="#shape-1" id="toc-shape-1" class="nav-link" data-scroll-target="#shape-1"><span class="header-section-number">6.6.2</span> Shape</a></li>
+  <li><a href="#color-1" id="toc-color-1" class="nav-link" data-scroll-target="#color-1"><span class="header-section-number">6.6.3</span> Color</a></li>
+  <li><a href="#temperature-1" id="toc-temperature-1" class="nav-link" data-scroll-target="#temperature-1"><span class="header-section-number">6.6.4</span> Temperature</a></li>
+  <li><a href="#texture-1" id="toc-texture-1" class="nav-link" data-scroll-target="#texture-1"><span class="header-section-number">6.6.5</span> Texture</a></li>
+  <li><a href="#speed-1" id="toc-speed-1" class="nav-link" data-scroll-target="#speed-1"><span class="header-section-number">6.6.6</span> Speed</a></li>
+  </ul></li>
+  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters"><span class="header-section-number">6.7</span> Why this matters</a></li>
+  <li><a href="#chapter-summary" id="toc-chapter-summary" class="nav-link" data-scroll-target="#chapter-summary"><span class="header-section-number">6.8</span> Chapter summary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cp5-attributes.html">Part II: Adding Detail</a></li><li class="breadcrumb-item"><a href="./cp5-attributes.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Attributes</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Attributes</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Objects do not appear as empty units. They appear with qualities.</p>
+<p>A thing is not only <em>a thing</em>. It is large or small, round or flat, red or gray, warm or cold, smooth or rough, fast or slow. Once language has named an object and placed it within a category, the next step in semantic refinement is to notice its attributes. Attributes make description thicker. They allow language to move beyond bare identification and begin answering a more precise question: not only <em>what is it?</em>, but <em>what is it like?</em></p>
+<p>This is why attributes are one of the first tools of semantic detail.</p>
+<p>At the level of ordinary language, attributes help us see that the same category can contain many different forms. Two objects may both be chairs, yet differ in size, shape, color, texture, and weight. Two days may both be cold, yet differ in intensity, wind, brightness, and feel. Two people may both be tired, yet differ in speed, posture, tone, and visible energy. Attributes reveal variety within sameness.</p>
+<section id="what-is-an-attribute" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="what-is-an-attribute"><span class="header-section-number">6.1</span> What is an attribute?</h2>
+<p>At the level of ordinary language, an attribute is a quality or feature that belongs to an object, condition, or event.</p>
+<p>We notice attributes through simple descriptive dimensions such as:</p>
+<ul>
+<li><p>size</p></li>
+<li><p>shape</p></li>
+<li><p>color</p></li>
+<li><p>temperature</p></li>
+<li><p>texture</p></li>
+<li><p>speed</p></li>
+</ul>
+<p>Examples include:</p>
+<ul>
+<li><p>a large box</p></li>
+<li><p>a round table</p></li>
+<li><p>a red apple</p></li>
+<li><p>warm water</p></li>
+<li><p>rough wood</p></li>
+<li><p>a fast car</p></li>
+</ul>
+<p>An attribute does not usually create a new object.<br>
+It refines how the object is seen and described.</p>
+</section>
+<section id="why-attributes-matter" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="why-attributes-matter"><span class="header-section-number">6.2</span> Why attributes matter</h2>
+<p>Attributes matter because naming alone is too thin for most real description.</p>
+<p>We need to know:</p>
+<ul>
+<li><p>how one thing differs from another within the same category</p></li>
+<li><p>how qualities can be attached to named objects</p></li>
+<li><p>how language begins to thicken perception</p></li>
+<li><p>how description becomes more precise without yet becoming fully technical</p></li>
+</ul>
+<p>Without attributes, language remains coarse. We may say <em>tree</em>, <em>room</em>, <em>car</em>, <em>voice</em>, or <em>pain</em>, but the world stays too flat. Attributes give texture to attention. They turn a bare category into a more visible form.</p>
+</section>
+<section id="key-distinctions" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="key-distinctions"><span class="header-section-number">6.3</span> Key distinctions</h2>
+<section id="size" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="size"><span class="header-section-number">6.3.1</span> 1. Size</h3>
+<p>Many objects can be described by how large or small they are.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>large / big</td>
+<td>greater in overall size</td>
+<td>a large room, a big dog, a large box</td>
+</tr>
+<tr class="even">
+<td>small</td>
+<td>lesser in overall size</td>
+<td>a small bag, a small stone, a small plant</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>The room is large.</p></li>
+<li><p>The cup is small.</p></li>
+<li><p>She carried a big bag.</p></li>
+<li><p>The tree is too large for the yard.</p></li>
+</ul>
+<p>Size matters because it often affects use, capacity, effort, and relation to other things.</p>
+<hr>
+</section>
+<section id="shape" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="shape"><span class="header-section-number">6.3.2</span> 2. Shape</h3>
+<p>Objects often differ not only in size, but in form.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>round</td>
+<td>circular or curved in overall form</td>
+<td>a round plate, a round ball</td>
+</tr>
+<tr class="even">
+<td>square / rectangular</td>
+<td>shaped with straighter edges and angles</td>
+<td>a square table, a rectangular box</td>
+</tr>
+<tr class="odd">
+<td>flat / long / narrow</td>
+<td>other common shape qualities</td>
+<td>a flat surface, a long stick, a narrow road</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>The table is round.</p></li>
+<li><p>The box is rectangular.</p></li>
+<li><p>The road is narrow.</p></li>
+<li><p>The stone is flat and smooth.</p></li>
+</ul>
+<p>Shape matters because it affects recognition, function, and fit.</p>
+<hr>
+</section>
+<section id="color" class="level3" data-number="6.3.3">
+<h3 data-number="6.3.3" class="anchored" data-anchor-id="color"><span class="header-section-number">6.3.3</span> 3. Color</h3>
+<p>Color is one of the quickest visible attributes.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>basic color</td>
+<td>a visible color quality</td>
+<td>red, blue, green, black, white</td>
+</tr>
+<tr class="even">
+<td>color contrast</td>
+<td>difference in color between objects</td>
+<td>a red apple and a green leaf</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>The apple is red.</p></li>
+<li><p>The wall is white.</p></li>
+<li><p>She wore a blue coat.</p></li>
+<li><p>The leaves turned yellow.</p></li>
+</ul>
+<p>Color matters because it often supports recognition, comparison, and emotional or practical judgment.</p>
+<hr>
+</section>
+<section id="temperature" class="level3" data-number="6.3.4">
+<h3 data-number="6.3.4" class="anchored" data-anchor-id="temperature"><span class="header-section-number">6.3.4</span> 4. Temperature</h3>
+<p>Some things are described by how hot or cold they are.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>hot / warm</td>
+<td>greater heat</td>
+<td>hot tea, warm water, a warm room</td>
+</tr>
+<tr class="even">
+<td>cold / cool</td>
+<td>lesser heat</td>
+<td>cold air, cool metal, cold hands</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>The tea is hot.</p></li>
+<li><p>The water feels warm.</p></li>
+<li><p>The room is cold.</p></li>
+<li><p>His hands were cold.</p></li>
+</ul>
+<p>Temperature matters because it affects comfort, safety, function, and bodily experience.</p>
+<hr>
+</section>
+<section id="texture" class="level3" data-number="6.3.5">
+<h3 data-number="6.3.5" class="anchored" data-anchor-id="texture"><span class="header-section-number">6.3.5</span> 5. Texture</h3>
+<p>Objects differ in surface quality and feel.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 46%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>smooth</td>
+<td>even, soft, or without roughness</td>
+<td>smooth glass, smooth skin</td>
+</tr>
+<tr class="even">
+<td>rough</td>
+<td>uneven or harsh to the touch</td>
+<td>rough wood, rough stone</td>
+</tr>
+<tr class="odd">
+<td>soft / hard</td>
+<td>yielding or resistant to pressure</td>
+<td>soft cloth, hard metal</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>The table feels smooth.</p></li>
+<li><p>The wall is rough.</p></li>
+<li><p>The blanket is soft.</p></li>
+<li><p>The floor is hard and cold.</p></li>
+</ul>
+<p>Texture matters because it connects visual description with touch and practical use.</p>
+<hr>
+</section>
+<section id="speed" class="level3" data-number="6.3.6">
+<h3 data-number="6.3.6" class="anchored" data-anchor-id="speed"><span class="header-section-number">6.3.6</span> 6. Speed</h3>
+<p>Some objects, actions, or changes are described by how fast or slow they move or happen.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>fast</td>
+<td>high speed</td>
+<td>a fast car, quick movement, rapid change</td>
+</tr>
+<tr class="even">
+<td>slow</td>
+<td>low speed</td>
+<td>a slow walk, slow growth, slow response</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>The car is fast.</p></li>
+<li><p>He walks slowly.</p></li>
+<li><p>The river moved slowly.</p></li>
+<li><p>The machine works too fast.</p></li>
+</ul>
+<p>Speed matters because it affects timing, risk, efficiency, and experience.</p>
+</section>
+</section>
+<section id="core-patterns" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="core-patterns"><span class="header-section-number">6.4</span> Core patterns</h2>
+<p>This chapter rests on a few basic patterns.</p>
+<section id="basic-semantic-patterns" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="basic-semantic-patterns"><span class="header-section-number">6.4.1</span> Basic semantic patterns</h3>
+<ul>
+<li><p>Objects have attributes.</p></li>
+<li><p>Attributes refine description.</p></li>
+<li><p>The same category can contain objects with different attributes.</p></li>
+<li><p>Attributes make language more precise.</p></li>
+<li><p>A thing may be described through several attributes at once.</p></li>
+</ul>
+</section>
+<section id="basic-language-patterns" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="basic-language-patterns"><span class="header-section-number">6.4.2</span> Basic language patterns</h3>
+<ul>
+<li><p>___ is big / small.</p></li>
+<li><p>___ is round / flat / narrow.</p></li>
+<li><p>___ is red / blue / green.</p></li>
+<li><p>___ is hot / warm / cold.</p></li>
+<li><p>___ feels smooth / rough / soft / hard.</p></li>
+<li><p>___ is fast / slow.</p></li>
+<li><p>The ___ has the attribute of ___.</p></li>
+<li><p>This object is ___ in size / shape / color.</p></li>
+</ul>
+</section>
+</section>
+<section id="attributes-and-the-movement-of-this-volume" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="attributes-and-the-movement-of-this-volume"><span class="header-section-number">6.5</span> Attributes and the movement of this volume</h2>
+<p>Attributes are the first major step from naming toward qualification.</p>
+<section id="naming-selects" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="naming-selects"><span class="header-section-number">6.5.1</span> Naming selects</h3>
+<ul>
+<li>A word first picks out an object.</li>
+</ul>
+</section>
+<section id="categories-group" class="level3" data-number="6.5.2">
+<h3 data-number="6.5.2" class="anchored" data-anchor-id="categories-group"><span class="header-section-number">6.5.2</span> Categories group</h3>
+<ul>
+<li>The object is placed within a class.</li>
+</ul>
+</section>
+<section id="specificity-narrows" class="level3" data-number="6.5.3">
+<h3 data-number="6.5.3" class="anchored" data-anchor-id="specificity-narrows"><span class="header-section-number">6.5.3</span> Specificity narrows</h3>
+<ul>
+<li>The object may be named more broadly or more narrowly.</li>
+</ul>
+</section>
+<section id="attributes-refine" class="level3" data-number="6.5.4">
+<h3 data-number="6.5.4" class="anchored" data-anchor-id="attributes-refine"><span class="header-section-number">6.5.4</span> Attributes refine</h3>
+<ul>
+<li>The object is now described through qualities.</li>
+</ul>
+<p>This is a major semantic shift. Language is no longer only asking <em>what is it called?</em> It is beginning to ask <em>what is it like?</em></p>
+</section>
+</section>
+<section id="examples" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="examples"><span class="header-section-number">6.6</span> Examples</h2>
+<p>Here are some clean examples of attribute language.</p>
+<section id="size-1" class="level3" data-number="6.6.1">
+<h3 data-number="6.6.1" class="anchored" data-anchor-id="size-1"><span class="header-section-number">6.6.1</span> Size</h3>
+<ul>
+<li><p>The box is large.</p></li>
+<li><p>The cup is small.</p></li>
+<li><p>The tree is tall.</p></li>
+<li><p>The bag is too big.</p></li>
+</ul>
+</section>
+<section id="shape-1" class="level3" data-number="6.6.2">
+<h3 data-number="6.6.2" class="anchored" data-anchor-id="shape-1"><span class="header-section-number">6.6.2</span> Shape</h3>
+<ul>
+<li><p>The plate is round.</p></li>
+<li><p>The box is square.</p></li>
+<li><p>The road is narrow.</p></li>
+<li><p>The stone is flat.</p></li>
+</ul>
+</section>
+<section id="color-1" class="level3" data-number="6.6.3">
+<h3 data-number="6.6.3" class="anchored" data-anchor-id="color-1"><span class="header-section-number">6.6.3</span> Color</h3>
+<ul>
+<li><p>The apple is red.</p></li>
+<li><p>The wall is white.</p></li>
+<li><p>The car is black.</p></li>
+<li><p>The sky turned gray.</p></li>
+</ul>
+</section>
+<section id="temperature-1" class="level3" data-number="6.6.4">
+<h3 data-number="6.6.4" class="anchored" data-anchor-id="temperature-1"><span class="header-section-number">6.6.4</span> Temperature</h3>
+<ul>
+<li><p>The soup is hot.</p></li>
+<li><p>The room feels warm.</p></li>
+<li><p>The water is cold.</p></li>
+<li><p>The air is cool this morning.</p></li>
+</ul>
+</section>
+<section id="texture-1" class="level3" data-number="6.6.5">
+<h3 data-number="6.6.5" class="anchored" data-anchor-id="texture-1"><span class="header-section-number">6.6.5</span> Texture</h3>
+<ul>
+<li><p>The cloth is soft.</p></li>
+<li><p>The table is smooth.</p></li>
+<li><p>The wood feels rough.</p></li>
+<li><p>The floor is hard.</p></li>
+</ul>
+</section>
+<section id="speed-1" class="level3" data-number="6.6.6">
+<h3 data-number="6.6.6" class="anchored" data-anchor-id="speed-1"><span class="header-section-number">6.6.6</span> Speed</h3>
+<ul>
+<li><p>The car is fast.</p></li>
+<li><p>The child ran quickly.</p></li>
+<li><p>The old man walks slowly.</p></li>
+<li><p>The process is too slow.</p></li>
+</ul>
+<p>These examples show that attribute language often includes:</p>
+<ul>
+<li><p>visible quality</p></li>
+<li><p>tactile quality</p></li>
+<li><p>measurable tendency</p></li>
+<li><p>descriptive refinement</p></li>
+<li><p>contrast within a category</p></li>
+</ul>
+</section>
+</section>
+<section id="why-this-matters" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="why-this-matters"><span class="header-section-number">6.7</span> Why this matters</h2>
+<p>To understand attributes is to understand how language begins to make the world more visible.</p>
+<p>Without attributes, categories remain too flat. We may know what something is called, but not how it differs from other things in the same class. Attributes give shape, scale, color, feel, and motion to language. They make thought more discriminating.</p>
+<p>Attributes are also essential because many later structures depend on them:</p>
+<ul>
+<li><p>degree will place attributes on scales</p></li>
+<li><p>measurement will make some attributes more exact</p></li>
+<li><p>comparison will sharpen difference through attributes</p></li>
+<li><p>perspective will later affect which attributes are noticed first</p></li>
+<li><p>finer semantic control begins when bare names become qualified descriptions</p></li>
+</ul>
+<p>Granular language therefore requires more than selecting and grouping. It requires seeing the qualities that make one instance different from another.</p>
+</section>
+<section id="chapter-summary" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="chapter-summary"><span class="header-section-number">6.8</span> Chapter summary</h2>
+<p>This chapter introduces attributes as the qualities that make description more detailed.</p>
+<p>Objects have attributes, and those attributes allow language to move from simple naming toward finer characterization. Common examples include size, shape, color, temperature, texture, and speed.</p>
+<p>The central lessons of this chapter are:</p>
+<ul>
+<li><p>objects have attributes</p></li>
+<li><p>attributes refine description</p></li>
+<li><p>the same category can contain different qualities</p></li>
+<li><p>size, shape, color, temperature, texture, and speed are basic descriptive dimensions</p></li>
+<li><p>attributes increase semantic resolution</p></li>
+<li><p>description becomes more exact when qualities are named clearly</p></li>
+</ul>
+<p>To recognize attributes is to move from <em>what something is</em> toward <em>what it is like</em>. This is one of the first and most important steps in increasing the resolution of thought.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./cp4-specificity.html" class="pagination-link" aria-label="Levels of Specificity">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Levels of Specificity</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./cp6-degree.html" class="pagination-link" aria-label="Degree">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Degree</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

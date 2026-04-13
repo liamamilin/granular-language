@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; Degree – Granular Language</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./cp7-quantity.html" rel="next">
+<link href="./cp5-attributes.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cp5-attributes.html">Part II: Adding Detail</a></li><li class="breadcrumb-item"><a href="./cp6-degree.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Degree</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Granular Language</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I: Naming the World</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp1-naming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Naming</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp2-categories.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Categories</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp3-boundaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Boundaries</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp4-specificity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Levels of Specificity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II: Adding Detail</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp5-attributes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Attributes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp6-degree.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Degree</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp7-quantity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Quantity and Measure</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp8-comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Comparison</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III: Relating Things</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp9-Part.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Part and Whole</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp10-sequence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Sequence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp11-cause.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cause and Effect</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp12-dependence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Dependence and Condition</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part IV: Perspective and Experience</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp13-view.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Point of View</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp14-experience.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Experience</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp15-context.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Context</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp16-evaluation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Evaluation</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part V: Precision, Ambiguity, and Limits</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp17-vagueness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Vagueness</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp18-ambiguity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Ambiguity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp19-overprecision.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Overprecision</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cp20-.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">The Edge of Language</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Conclusion-Why Precision Changes Thought</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-degree" id="toc-what-is-degree" class="nav-link active" data-scroll-target="#what-is-degree"><span class="header-section-number">7.1</span> What is degree?</a></li>
+  <li><a href="#why-degree-matters" id="toc-why-degree-matters" class="nav-link" data-scroll-target="#why-degree-matters"><span class="header-section-number">7.2</span> Why degree matters</a></li>
+  <li><a href="#key-distinctions" id="toc-key-distinctions" class="nav-link" data-scroll-target="#key-distinctions"><span class="header-section-number">7.3</span> Key distinctions</a>
+  <ul class="collapse">
+  <li><a href="#weak-and-strong" id="toc-weak-and-strong" class="nav-link" data-scroll-target="#weak-and-strong"><span class="header-section-number">7.3.1</span> 1. Weak and strong</a></li>
+  <li><a href="#warm-and-hot" id="toc-warm-and-hot" class="nav-link" data-scroll-target="#warm-and-hot"><span class="header-section-number">7.3.2</span> 2. Warm and hot</a></li>
+  <li><a href="#small-and-large" id="toc-small-and-large" class="nav-link" data-scroll-target="#small-and-large"><span class="header-section-number">7.3.3</span> 3. Small and large</a></li>
+  <li><a href="#slightly-very-extremely" id="toc-slightly-very-extremely" class="nav-link" data-scroll-target="#slightly-very-extremely"><span class="header-section-number">7.3.4</span> 4. Slightly, very, extremely</a></li>
+  <li><a href="#scalar-meaning" id="toc-scalar-meaning" class="nav-link" data-scroll-target="#scalar-meaning"><span class="header-section-number">7.3.5</span> 5. Scalar meaning</a></li>
+  </ul></li>
+  <li><a href="#core-patterns" id="toc-core-patterns" class="nav-link" data-scroll-target="#core-patterns"><span class="header-section-number">7.4</span> Core patterns</a>
+  <ul class="collapse">
+  <li><a href="#basic-semantic-patterns" id="toc-basic-semantic-patterns" class="nav-link" data-scroll-target="#basic-semantic-patterns"><span class="header-section-number">7.4.1</span> Basic semantic patterns</a></li>
+  <li><a href="#basic-language-patterns" id="toc-basic-language-patterns" class="nav-link" data-scroll-target="#basic-language-patterns"><span class="header-section-number">7.4.2</span> Basic language patterns</a></li>
+  </ul></li>
+  <li><a href="#degree-and-the-movement-of-this-volume" id="toc-degree-and-the-movement-of-this-volume" class="nav-link" data-scroll-target="#degree-and-the-movement-of-this-volume"><span class="header-section-number">7.5</span> Degree and the movement of this volume</a>
+  <ul class="collapse">
+  <li><a href="#attributes-name-the-quality" id="toc-attributes-name-the-quality" class="nav-link" data-scroll-target="#attributes-name-the-quality"><span class="header-section-number">7.5.1</span> Attributes name the quality</a></li>
+  <li><a href="#degree-places-the-quality-on-a-scale" id="toc-degree-places-the-quality-on-a-scale" class="nav-link" data-scroll-target="#degree-places-the-quality-on-a-scale"><span class="header-section-number">7.5.2</span> Degree places the quality on a scale</a></li>
+  </ul></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">7.6</span> Examples</a>
+  <ul class="collapse">
+  <li><a href="#bodily-condition" id="toc-bodily-condition" class="nav-link" data-scroll-target="#bodily-condition"><span class="header-section-number">7.6.1</span> Bodily condition</a></li>
+  <li><a href="#temperature" id="toc-temperature" class="nav-link" data-scroll-target="#temperature"><span class="header-section-number">7.6.2</span> Temperature</a></li>
+  <li><a href="#size" id="toc-size" class="nav-link" data-scroll-target="#size"><span class="header-section-number">7.6.3</span> Size</a></li>
+  <li><a href="#general-intensity" id="toc-general-intensity" class="nav-link" data-scroll-target="#general-intensity"><span class="header-section-number">7.6.4</span> General intensity</a></li>
+  </ul></li>
+  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters"><span class="header-section-number">7.7</span> Why this matters</a></li>
+  <li><a href="#chapter-summary" id="toc-chapter-summary" class="nav-link" data-scroll-target="#chapter-summary"><span class="header-section-number">7.8</span> Chapter summary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cp5-attributes.html">Part II: Adding Detail</a></li><li class="breadcrumb-item"><a href="./cp6-degree.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Degree</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Degree</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Many attributes are not simply present or absent. They vary by degree.</p>
+<p>A person may be weak or strong, but also somewhat weak, fairly strong, or extremely strong. Water may be warm, hot, or only slightly warm. A room may be small, large, or somewhere in between. A feeling may be mild, strong, or overwhelming. In ordinary language, many qualities do not work like switches that are either on or off. They work more like scales.</p>
+<p>This is why degree matters.</p>
+<p>After language has learned to name objects and describe attributes, it must take another step: it must learn to place qualities along a range. This is one of the main ways semantic resolution increases. A simple attribute such as <em>warm</em> tells us something, but degree tells us more. It allows language to say not only what kind of quality is present, but how much of it is present.</p>
+<section id="what-is-degree" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="what-is-degree"><span class="header-section-number">7.1</span> What is degree?</h2>
+<p>At the level of ordinary language, degree is the amount, intensity, or level of a quality.</p>
+<p>We notice degree through simple patterns such as:</p>
+<ul>
+<li><p>weak and strong</p></li>
+<li><p>warm and hot</p></li>
+<li><p>small and large</p></li>
+<li><p>slightly, very, and extremely</p></li>
+<li><p>scalar meaning in general</p></li>
+</ul>
+<p>Examples include:</p>
+<ul>
+<li><p>slightly tired</p></li>
+<li><p>very cold</p></li>
+<li><p>extremely loud</p></li>
+<li><p>somewhat weak</p></li>
+<li><p>highly useful</p></li>
+</ul>
+<p>Degree adds scale to attributes.<br>
+It turns flat description into graded description.</p>
+</section>
+<section id="why-degree-matters" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="why-degree-matters"><span class="header-section-number">7.2</span> Why degree matters</h2>
+<p>Degree matters because ordinary reality is rarely all-or-nothing.</p>
+<p>We need to know:</p>
+<ul>
+<li><p>that many qualities come in levels</p></li>
+<li><p>that one thing may be more or less of a quality than another</p></li>
+<li><p>that language often needs intensifiers or scalar contrasts</p></li>
+<li><p>that resolution improves when degree is noticed clearly</p></li>
+</ul>
+<p>Without degree, description becomes too blunt. We may know that a room is warm, but not whether it is slightly warm or extremely hot. We may know that a person is tired, but not whether the tiredness is mild or severe. Degree gives language control over intensity, scale, and threshold.</p>
+</section>
+<section id="key-distinctions" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="key-distinctions"><span class="header-section-number">7.3</span> Key distinctions</h2>
+<section id="weak-and-strong" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="weak-and-strong"><span class="header-section-number">7.3.1</span> 1. Weak and strong</h3>
+<p>Some qualities vary in force or power.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Degree</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>weak</td>
+<td>low in force, intensity, or capacity</td>
+<td>weak muscles, weak signal, weak argument</td>
+</tr>
+<tr class="even">
+<td>strong</td>
+<td>high in force, intensity, or capacity</td>
+<td>strong body, strong smell, strong support</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>His legs feel weak.</p></li>
+<li><p>She has a strong grip.</p></li>
+<li><p>The signal is weak here.</p></li>
+<li><p>That smell is very strong.</p></li>
+</ul>
+<p>This matters because many bodily, physical, and abstract qualities are understood through strength of degree.</p>
+<hr>
+</section>
+<section id="warm-and-hot" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="warm-and-hot"><span class="header-section-number">7.3.2</span> 2. Warm and hot</h3>
+<p>Temperature is a clear example of scalar meaning.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Degree</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>warm</td>
+<td>moderately high temperature</td>
+<td>warm room, warm water</td>
+</tr>
+<tr class="even">
+<td>hot</td>
+<td>higher temperature</td>
+<td>hot tea, hot pan, hot weather</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>The water is warm.</p></li>
+<li><p>The tea is hot.</p></li>
+<li><p>The room is slightly warm.</p></li>
+<li><p>The pan is too hot to touch.</p></li>
+</ul>
+<p>This matters because a shift in degree can change comfort, safety, and practical response.</p>
+<hr>
+</section>
+<section id="small-and-large" class="level3" data-number="7.3.3">
+<h3 data-number="7.3.3" class="anchored" data-anchor-id="small-and-large"><span class="header-section-number">7.3.3</span> 3. Small and large</h3>
+<p>Many size-related attributes also work by degree.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 34%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Degree</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>small</td>
+<td>lower in size or scale</td>
+<td>small room, small bag, small dog</td>
+</tr>
+<tr class="even">
+<td>large</td>
+<td>higher in size or scale</td>
+<td>large building, large box, large crowd</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>The box is small.</p></li>
+<li><p>The house is large.</p></li>
+<li><p>The difference is very small.</p></li>
+<li><p>The crowd became extremely large.</p></li>
+</ul>
+<p>This matters because size is often not absolute. It is judged relative to expectation, use, or comparison.</p>
+<hr>
+</section>
+<section id="slightly-very-extremely" class="level3" data-number="7.3.4">
+<h3 data-number="7.3.4" class="anchored" data-anchor-id="slightly-very-extremely"><span class="header-section-number">7.3.4</span> 4. Slightly, very, extremely</h3>
+<p>Language often marks degree through modifiers.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modifier</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>slightly</td>
+<td>low degree</td>
+<td>slightly warm, slightly tired, slightly wet</td>
+</tr>
+<tr class="even">
+<td>very</td>
+<td>high degree</td>
+<td>very cold, very useful, very large</td>
+</tr>
+<tr class="odd">
+<td>extremely</td>
+<td>very high degree</td>
+<td>extremely hot, extremely difficult, extremely tired</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>I am slightly tired.</p></li>
+<li><p>The water is very cold.</p></li>
+<li><p>The room is extremely quiet.</p></li>
+<li><p>She was slightly worried at first.</p></li>
+</ul>
+<p>These words matter because they help language measure intensity without using exact numbers.</p>
+<hr>
+</section>
+<section id="scalar-meaning" class="level3" data-number="7.3.5">
+<h3 data-number="7.3.5" class="anchored" data-anchor-id="scalar-meaning"><span class="header-section-number">7.3.5</span> 5. Scalar meaning</h3>
+<p>Some words naturally imply a scale rather than a simple yes-or-no state.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Scalar quality</th>
+<th>Lower range</th>
+<th>Higher range</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>temperature</td>
+<td>cool</td>
+<td>warm / hot</td>
+</tr>
+<tr class="even">
+<td>strength</td>
+<td>weak</td>
+<td>strong</td>
+</tr>
+<tr class="odd">
+<td>size</td>
+<td>small</td>
+<td>large</td>
+</tr>
+<tr class="even">
+<td>speed</td>
+<td>slow</td>
+<td>fast</td>
+</tr>
+<tr class="odd">
+<td>intensity</td>
+<td>slight</td>
+<td>extreme</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<ul>
+<li><p>The noise became louder.</p></li>
+<li><p>He is stronger than before.</p></li>
+<li><p>The road feels narrower here.</p></li>
+<li><p>The pain is getting worse.</p></li>
+</ul>
+<p>Scalar meaning matters because it allows language to track increase, decrease, threshold, and comparison more precisely.</p>
+</section>
+</section>
+<section id="core-patterns" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="core-patterns"><span class="header-section-number">7.4</span> Core patterns</h2>
+<p>This chapter rests on a few basic patterns.</p>
+<section id="basic-semantic-patterns" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="basic-semantic-patterns"><span class="header-section-number">7.4.1</span> Basic semantic patterns</h3>
+<ul>
+<li><p>Many attributes vary by degree.</p></li>
+<li><p>Degree adds scale to description.</p></li>
+<li><p>Some qualities are low in intensity.</p></li>
+<li><p>Some qualities are high in intensity.</p></li>
+<li><p>Degree can be marked by contrast words or modifiers.</p></li>
+<li><p>Scalar meaning makes description more precise.</p></li>
+</ul>
+</section>
+<section id="basic-language-patterns" class="level3" data-number="7.4.2">
+<h3 data-number="7.4.2" class="anchored" data-anchor-id="basic-language-patterns"><span class="header-section-number">7.4.2</span> Basic language patterns</h3>
+<ul>
+<li><p>___ is weak / strong.</p></li>
+<li><p>___ is warm / hot.</p></li>
+<li><p>___ is small / large.</p></li>
+<li><p>___ is slightly ___.</p></li>
+<li><p>___ is very ___.</p></li>
+<li><p>___ is extremely ___.</p></li>
+<li><p>The degree of ___ is high / low.</p></li>
+<li><p>___ became more / less ___.</p></li>
+</ul>
+</section>
+</section>
+<section id="degree-and-the-movement-of-this-volume" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="degree-and-the-movement-of-this-volume"><span class="header-section-number">7.5</span> Degree and the movement of this volume</h2>
+<p>Degree extends the work of attributes.</p>
+<section id="attributes-name-the-quality" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="attributes-name-the-quality"><span class="header-section-number">7.5.1</span> Attributes name the quality</h3>
+<ul>
+<li><p>a room is warm</p></li>
+<li><p>a bag is heavy</p></li>
+<li><p>a person is tired</p></li>
+</ul>
+</section>
+<section id="degree-places-the-quality-on-a-scale" class="level3" data-number="7.5.2">
+<h3 data-number="7.5.2" class="anchored" data-anchor-id="degree-places-the-quality-on-a-scale"><span class="header-section-number">7.5.2</span> Degree places the quality on a scale</h3>
+<ul>
+<li><p>slightly warm</p></li>
+<li><p>very heavy</p></li>
+<li><p>extremely tired</p></li>
+</ul>
+<p>This is a major refinement. Language is no longer just attaching qualities to objects. It is beginning to calibrate those qualities.</p>
+</section>
+</section>
+<section id="examples" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="examples"><span class="header-section-number">7.6</span> Examples</h2>
+<p>Here are some clean examples of degree language.</p>
+<section id="bodily-condition" class="level3" data-number="7.6.1">
+<h3 data-number="7.6.1" class="anchored" data-anchor-id="bodily-condition"><span class="header-section-number">7.6.1</span> Bodily condition</h3>
+<ul>
+<li><p>I feel slightly tired.</p></li>
+<li><p>He is very weak today.</p></li>
+<li><p>She became extremely tired after the trip.</p></li>
+<li><p>My back pain is mild, not severe.</p></li>
+</ul>
+</section>
+<section id="temperature" class="level3" data-number="7.6.2">
+<h3 data-number="7.6.2" class="anchored" data-anchor-id="temperature"><span class="header-section-number">7.6.2</span> Temperature</h3>
+<ul>
+<li><p>The water is warm.</p></li>
+<li><p>The tea is very hot.</p></li>
+<li><p>The air is slightly cold.</p></li>
+<li><p>The room became too warm.</p></li>
+</ul>
+</section>
+<section id="size" class="level3" data-number="7.6.3">
+<h3 data-number="7.6.3" class="anchored" data-anchor-id="size"><span class="header-section-number">7.6.3</span> Size</h3>
+<ul>
+<li><p>The bag is small.</p></li>
+<li><p>The building is very large.</p></li>
+<li><p>The difference is quite small.</p></li>
+<li><p>That object is extremely large for this space.</p></li>
+</ul>
+</section>
+<section id="general-intensity" class="level3" data-number="7.6.4">
+<h3 data-number="7.6.4" class="anchored" data-anchor-id="general-intensity"><span class="header-section-number">7.6.4</span> General intensity</h3>
+<ul>
+<li><p>The sound is very loud.</p></li>
+<li><p>The light is slightly dim.</p></li>
+<li><p>The task is extremely difficult.</p></li>
+<li><p>Her voice was a little soft.</p></li>
+</ul>
+<p>These examples show that degree language often includes:</p>
+<ul>
+<li><p>intensity</p></li>
+<li><p>scale</p></li>
+<li><p>modifiers</p></li>
+<li><p>thresholds</p></li>
+<li><p>increasing precision</p></li>
+</ul>
+</section>
+</section>
+<section id="why-this-matters" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="why-this-matters"><span class="header-section-number">7.7</span> Why this matters</h2>
+<p>To understand degree is to understand that many qualities are gradual rather than binary.</p>
+<p>Without this idea, language stays too rough. A person may say that something is hot, tired, difficult, large, or dangerous without showing how much. Degree allows thought to become more measured. It makes room for low, medium, and high intensity; for mild, moderate, and severe condition; for slight change and major change.</p>
+<p>Degree is also essential because many later structures depend on it:</p>
+<ul>
+<li><p>measure will make some degrees more exact</p></li>
+<li><p>comparison will often compare degrees across objects</p></li>
+<li><p>vagueness and thresholds will later show where degree becomes hard to fix precisely</p></li>
+<li><p>better judgment often depends on noticing not just quality, but intensity</p></li>
+</ul>
+<p>Granular language therefore requires more than naming qualities. It requires scaling them.</p>
+</section>
+<section id="chapter-summary" class="level2" data-number="7.8">
+<h2 data-number="7.8" class="anchored" data-anchor-id="chapter-summary"><span class="header-section-number">7.8</span> Chapter summary</h2>
+<p>This chapter introduces degree as the scalar dimension of many attributes.</p>
+<p>Many qualities are not simply present or absent. They vary by amount, force, intensity, or level. Common examples include weak and strong, warm and hot, small and large, and modifiers such as slightly, very, and extremely.</p>
+<p>The central lessons of this chapter are:</p>
+<ul>
+<li><p>many attributes vary by degree</p></li>
+<li><p>degree adds scale to description</p></li>
+<li><p>scalar meaning is common in ordinary language</p></li>
+<li><p>modifiers help mark intensity</p></li>
+<li><p>degree increases semantic resolution</p></li>
+<li><p>language becomes more precise when qualities are calibrated, not just named</p></li>
+</ul>
+<p>To recognize degree is to move from flat description toward graded description. This is one of the most important ways language increases the resolution of thought.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./cp5-attributes.html" class="pagination-link" aria-label="Attributes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Attributes</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./cp7-quantity.html" class="pagination-link" aria-label="Quantity and Measure">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Quantity and Measure</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
